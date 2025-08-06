@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Plant Disease Detection</string>
+
+    <!-- Camera Fragment -->
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="detection_results">Hasil Deteksi</string>
+    <string name="save_detection">Simpan Hasil</string>
+    <string name="detection_saved">Berhasil disimpan!</string>
+    <string name="detection_save_failed">Gagal menyimpan: %s</string>
+
+    <!-- Error Messages -->
+    <string name="error_camera_init">Gagal menginisialisasi kamera</string>
+    <string name="error_model_load">Gagal memuat model TensorFlow Lite</string>
+    <string name="error_processing_image">Error memproses gambar</string>
+    <string name="error_firebase_save">Gagal menyimpan ke Firebase</string>
+
+    <!-- Plant Status -->
+    <string name="status_healthy">Sehat</string>
+    <string name="status_lack_water">Kurang Air</string>
+    <string name="status_potassium_deficiency">Kekurangan Kalium</string>
+    <string name="status_calcium_deficiency">Kekurangan Kalsium</string>
+    <string name="status_nitrogen_deficiency">Kekurangan Nitrogen</string>
+
+    <!-- General -->
+    <string name="loading">Memuat...</string>
+    <string name="no_detection">Tidak ada deteksi</string>
+    <string name="confidence">Kepercayaan: %.2f%%</string>
+</resources>

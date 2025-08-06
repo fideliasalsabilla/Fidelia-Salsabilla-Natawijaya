@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <!-- Izinkan sistem mengekstrak semua data yang diizinkan untuk backup -->
+    <allow-all />
+</data-extraction-rules>

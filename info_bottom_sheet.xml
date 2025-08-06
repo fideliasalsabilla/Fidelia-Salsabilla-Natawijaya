@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottomsheet"
+    android:paddingTop="20dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="30dp">
+
+    <TextView
+        android:id="@+id/rekomendasiTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rekomendasi akan muncul di sini"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Handle Drag -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_handle"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Teks Geser -->
+    <TextView
+        android:id="@+id/dragIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geser keatas untuk selengkapnya"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Waktu deteksi -->
+    <TextView
+        android:id="@+id/inferenceTimeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inference Time: 0 ms"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Container info deteksi -->
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan Hasil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cameraFragment">
+
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="org.tensorflow.lite.examples.objectdetection.fragments.PermissionsFragment"
+        android:label="Permissions"
+        tools:layout="@layout/fragment_permissions">
+
+        <action
+            android:id="@+id/action_permissions_to_camera"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="org.tensorflow.lite.examples.objectdetection.fragments.CameraFragment"
+        android:label="Deteksi Kamera"
+        tools:layout="@layout/fragment_camera">
+
+        <action
+            android:id="@+id/action_camera_to_history"
+            app:destination="@id/historyFragment" />
+
+        <action
+            android:id="@+id/action_camera_to_statistics"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="org.tensorflow.lite.examples.objectdetection.fragments.HistoryFragment"
+        android:label="Riwayat"
+        tools:layout="@layout/fragment_history">
+
+        <action
+            android:id="@+id/action_history_to_camera"
+            app:destination="@id/cameraFragment" />
+
+        <action
+            android:id="@+id/action_history_to_statistics"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.tensorflow.lite.examples.objectdetection.fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="org.tensorflow.lite.examples.objectdetection.fragments.StatisticsFragment"
+        android:label="Statistik"
+        tools:layout="@layout/fragment_statistics">
+
+        <action
+            android:id="@+id/action_statistics_to_camera"
+            app:destination="@id/cameraFragment" />
+
+        <action
+            android:id="@+id/action_statistics_to_history"
+            app:destination="@id/historyFragment" />
+    </fragment>
+
+</navigation>
