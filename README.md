@@ -30,4 +30,12 @@ Fungsinya adalah untuk [deskripsi singkat: contoh "mendeteksi objek cabai berdas
 ---
 
 ## 📁 Struktur Folder Utama
+📦 Fidelia-Salsabilla-Natawijaya/
+├── 📁 app/
+│   └── 📁 src/
+│       └── 📁 main/
+│           └── 📁 java/com/namapaket/  ← Pindahkan semua file .kt ke sini
+│               ├── Detection.kt
+│               ├── CameraFragment.kt
+│               └── ...
 
